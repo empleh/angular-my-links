@@ -1,0 +1,85 @@
+{
+  "organizations": [
+    {
+      "name": "TDDdev",
+      "color": "#FFDD00",
+      "icon": "code",
+      "mottos": [
+        "Always Improving",
+        "Red, Green, Refactor",
+        "I am Me, I am a heretic",
+        "Grow through Fast Iterative Learning"
+      ],
+      "links": [
+        {
+          "name": "Me",
+          "urls": [
+            {
+              "name": "Blogger",
+              "url": "https://www.blogger.com/blogger.g?blogID=7827567395977722905#allposts"
+            },
+            {
+              "name": "Book Club",
+              "url": "http://www.continuouslearningbookclub.com/"
+            },
+            {
+              "name": "Collab Book Club",
+              "url": "https://trello.com/b/S6GqPRQZ/the-collaborative-book-club"
+            }
+          ]
+        },
+        {
+          "name": "Meditation",
+          "urls": [
+            {
+              "name": "Gratitude and Joy",
+              "url": "https://app.smilingmind.com.au/sessions/473/1339/2753/"
+            }
+          ]
+        },
+        {
+          "name": "Code",
+          "urls": [
+            {
+              "name": "VSO",
+              "url": "https://dev.azure.com/christianpetersTDDdev/"
+            },
+            {
+              "name": "Github",
+              "url": "https://github.com/empleh"
+            },
+            {
+              "name": "Feedly",
+              "url": "https://feedly.com/i/my"
+            }
+          ]
+        },
+        {
+          "name": "Tools",
+          "urls": [
+            {
+              "name": "Draw.IO",
+              "url": "https://www.draw.io"
+            },
+            {
+              "name": "PluralSight",
+              "url": "https://app.pluralsight.com/library"
+            },
+            {
+              "name": "Code Sandbox",
+              "url": "https://codesandbox.io/s/vanilla"
+            },
+            {
+              "name": "Window Swap",
+              "url": "https://window-swap.com"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "code": [
+    "document.designMode = 'on'",
+    "console.trace()"
+  ]
+}
