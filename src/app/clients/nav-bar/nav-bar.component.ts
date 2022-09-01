@@ -14,14 +14,18 @@ export class NavBarComponent implements OnInit {
   constructor(private service: LinksAccessorService) {}
 
   ngOnInit(): void {
-    this.service.$links.subscribe((o) => {
+    this.service.links$.subscribe((o) => {
       this.organizationNames = o.map((org) => org.name);
       this.activeLink = this.organizationNames[0];
+      this.service.setActiveLink(this.activeLink);
+    });
+    this.service.selectedOrganization$.subscribe((o) => {
+      this.navColor = o?.color || '#ffdd00';
     });
   }
 
   selectOrganization(link: string) {
+    this.service.setActiveLink(link);
     this.activeLink = link;
-    this.navColor = this.service.getOrganization(link)?.color || '#ffdd00';
   }
 }

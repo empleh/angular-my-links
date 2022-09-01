@@ -1,0 +1,12 @@
+<ng-container *ngIf="!!organization">
+  <mat-card *ngFor="let l of organization.links" class="w-1/4 m-5">
+    <mat-card-title>{{ l.name }}</mat-card-title>
+    <mat-card-content>
+      <ul>
+        <li *ngFor="let link of l.urls">
+          <a [href]="link.url" target="_blank">{{ link.name }}</a>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
