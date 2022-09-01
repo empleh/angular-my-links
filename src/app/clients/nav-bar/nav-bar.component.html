@@ -1,9 +1,12 @@
-<nav mat-tab-nav-bar [backgroundColor]="'primary'">
+<nav mat-tab-nav-bar [ngStyle]="{ 'background-color': navColor }">
   <a
     mat-tab-link
     *ngFor="let link of organizationNames"
-    (click)="activeLink = link"
+    (click)="selectOrganization(link)"
     [active]="activeLink == link"
+    [ngClass]="
+      activeLink == link ? 'text-black font-bold text-lg' : 'text-gray-500'
+    "
   >
     {{ link }}
   </a>
