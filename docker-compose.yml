@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  angular-docker:
+    container_name: angular-docker
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    build:
+      context: ./
+    ports:
+      - 4201:4201
+    volumes:
+      - ./:/app/
+      - /usr/app/node_modules
+    restart: always
